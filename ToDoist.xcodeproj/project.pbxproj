@@ -13,7 +13,6 @@
 		F74B0178189A55F500C29112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74B0176189A55F500C29112 /* InfoPlist.strings */; };
 		F74B017A189A55F500C29112 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F74B0179189A55F500C29112 /* main.m */; };
 		F74B017E189A55F500C29112 /* TDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74B017D189A55F500C29112 /* TDAppDelegate.m */; };
-		F74B0181189A55F500C29112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B017F189A55F500C29112 /* Main.storyboard */; };
 		F74B0184189A55F500C29112 /* TDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F74B0183189A55F500C29112 /* TDViewController.m */; };
 		F74B0186189A55F500C29112 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74B0185189A55F500C29112 /* Images.xcassets */; };
 		F74B018D189A55F500C29112 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74B018C189A55F500C29112 /* XCTest.framework */; };
@@ -21,6 +20,7 @@
 		F74B018F189A55F500C29112 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74B0171189A55F500C29112 /* UIKit.framework */; };
 		F74B0197189A55F500C29112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74B0195189A55F500C29112 /* InfoPlist.strings */; };
 		F74B0199189A55F500C29112 /* ToDoistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74B0198189A55F500C29112 /* ToDoistTests.m */; };
+		F74B01A8189A65C600C29112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B01A7189A65C600C29112 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		F74B017B189A55F500C29112 /* ToDoist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDoist-Prefix.pch"; sourceTree = "<group>"; };
 		F74B017C189A55F500C29112 /* TDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDAppDelegate.h; sourceTree = "<group>"; };
 		F74B017D189A55F500C29112 /* TDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDAppDelegate.m; sourceTree = "<group>"; };
-		F74B0180189A55F500C29112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F74B0182189A55F500C29112 /* TDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDViewController.h; sourceTree = "<group>"; };
 		F74B0183189A55F500C29112 /* TDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDViewController.m; sourceTree = "<group>"; };
 		F74B0185189A55F500C29112 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +52,7 @@
 		F74B0194189A55F500C29112 /* ToDoistTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoistTests-Info.plist"; sourceTree = "<group>"; };
 		F74B0196189A55F500C29112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F74B0198189A55F500C29112 /* ToDoistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoistTests.m; sourceTree = "<group>"; };
+		F74B01A7189A65C600C29112 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +114,7 @@
 			children = (
 				F74B017C189A55F500C29112 /* TDAppDelegate.h */,
 				F74B017D189A55F500C29112 /* TDAppDelegate.m */,
-				F74B017F189A55F500C29112 /* Main.storyboard */,
+				F74B01A7189A65C600C29112 /* Main.storyboard */,
 				F74B0182189A55F500C29112 /* TDViewController.h */,
 				F74B0183189A55F500C29112 /* TDViewController.m */,
 				F74B0185189A55F500C29112 /* Images.xcassets */,
@@ -229,9 +229,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F74B01A8189A65C600C29112 /* Main.storyboard in Resources */,
 				F74B0186189A55F500C29112 /* Images.xcassets in Resources */,
 				F74B0178189A55F500C29112 /* InfoPlist.strings in Resources */,
-				F74B0181189A55F500C29112 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +281,6 @@
 				F74B0177189A55F500C29112 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		F74B017F189A55F500C29112 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F74B0180189A55F500C29112 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		F74B0195189A55F500C29112 /* InfoPlist.strings */ = {
@@ -461,6 +453,7 @@
 				F74B019E189A55F500C29112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F74B019F189A55F500C29112 /* Build configuration list for PBXNativeTarget "ToDoistTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +462,7 @@
 				F74B01A1189A55F500C29112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

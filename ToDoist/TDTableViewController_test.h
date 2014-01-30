@@ -1,5 +1,5 @@
 //
-//  TDViewController.h
+//  TDTableViewController_test.h
 //  ToDoist
 //
 //  Created by Alexey Bondarenko on 1/30/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TDViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TDTableViewController_test : UITableViewController
 
 @end
