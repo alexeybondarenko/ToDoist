@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
 
-@interface TDViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface TDViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,NSFetchedResultsControllerDelegate, UITextFieldDelegate>
+{
+    NSFetchedResultsController *fetchedResultsController;
+    NSManagedObjectContext *managedObjectContext;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *taskInputField;
+
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
+-(void) addNewTask:(NSString*)taskText;
 
 @end

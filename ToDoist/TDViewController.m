@@ -14,6 +14,10 @@
 
 @implementation TDViewController
 
+@synthesize taskInputField;
+
+@synthesize fetchedResultsController, managedObjectContext;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -130,5 +134,25 @@
  }
  
  */
+
+#pragma mark TextEdition Delegate
+
+- (BOOL) textFieldShouldReturn:(UITextField *)textField{
+    NSLog(@"Return key had pressed");
+    [self addNewTask:textField.text];
+    
+    [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark Core Data
+
+-(void)addNewTask:(NSString*)taskText
+{
+    NSLog(@" add task: %@",taskText);
+    
+    //clear field
+    [taskInputField setText:@""];
+}
 
 @end

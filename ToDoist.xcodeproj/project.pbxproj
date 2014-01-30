@@ -21,6 +21,8 @@
 		F74B0197189A55F500C29112 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74B0195189A55F500C29112 /* InfoPlist.strings */; };
 		F74B0199189A55F500C29112 /* ToDoistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74B0198189A55F500C29112 /* ToDoistTests.m */; };
 		F74B01A8189A65C600C29112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74B01A7189A65C600C29112 /* Main.storyboard */; };
+		F7BE5C34189A8E5900086E90 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7BE5C33189A8E5900086E90 /* CoreData.framework */; };
+		F7BE5C83189A919A00086E90 /* toDoListData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7BE5C81189A919A00086E90 /* toDoListData.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		F74B0196189A55F500C29112 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F74B0198189A55F500C29112 /* ToDoistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoistTests.m; sourceTree = "<group>"; };
 		F74B01A7189A65C600C29112 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F7BE5C33189A8E5900086E90 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F7BE5C82189A919A00086E90 /* toDoListData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = toDoListData.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7BE5C34189A8E5900086E90 /* CoreData.framework in Frameworks */,
 				F74B0170189A55F500C29112 /* CoreGraphics.framework in Frameworks */,
 				F74B0172189A55F500C29112 /* UIKit.framework in Frameworks */,
 				F74B016E189A55F500C29112 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		F74B016C189A55F500C29112 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F7BE5C33189A8E5900086E90 /* CoreData.framework */,
 				F74B016D189A55F500C29112 /* Foundation.framework */,
 				F74B016F189A55F500C29112 /* CoreGraphics.framework */,
 				F74B0171189A55F500C29112 /* UIKit.framework */,
@@ -112,11 +118,10 @@
 		F74B0173189A55F500C29112 /* ToDoist */ = {
 			isa = PBXGroup;
 			children = (
-				F74B017C189A55F500C29112 /* TDAppDelegate.h */,
-				F74B017D189A55F500C29112 /* TDAppDelegate.m */,
+				F7BE5C84189A91AB00086E90 /* Application */,
 				F74B01A7189A65C600C29112 /* Main.storyboard */,
-				F74B0182189A55F500C29112 /* TDViewController.h */,
-				F74B0183189A55F500C29112 /* TDViewController.m */,
+				F7BE5C85189A91B700086E90 /* Controllers & Views */,
+				F7BE5C86189A91CC00086E90 /* Model */,
 				F74B0185189A55F500C29112 /* Images.xcassets */,
 				F74B0174189A55F500C29112 /* Supporting Files */,
 			);
@@ -150,6 +155,32 @@
 				F74B0195189A55F500C29112 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F7BE5C84189A91AB00086E90 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F74B017C189A55F500C29112 /* TDAppDelegate.h */,
+				F74B017D189A55F500C29112 /* TDAppDelegate.m */,
+			);
+			name = Application;
+			sourceTree = "<group>";
+		};
+		F7BE5C85189A91B700086E90 /* Controllers & Views */ = {
+			isa = PBXGroup;
+			children = (
+				F74B0182189A55F500C29112 /* TDViewController.h */,
+				F74B0183189A55F500C29112 /* TDViewController.m */,
+			);
+			name = "Controllers & Views";
+			sourceTree = "<group>";
+		};
+		F7BE5C86189A91CC00086E90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F7BE5C81189A919A00086E90 /* toDoListData.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +232,7 @@
 				ORGANIZATIONNAME = "Alexey Bondarenko";
 				TargetAttributes = {
 					F74B018A189A55F500C29112 = {
-						TestTargetID = F74B0169189A55F500C29112;
+						TestTargetID = F74B0169189A55F500C29112 /* ToDoist */;
 					};
 				};
 			};
@@ -251,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F74B0184189A55F500C29112 /* TDViewController.m in Sources */,
+				F7BE5C83189A919A00086E90 /* toDoListData.xcdatamodeld in Sources */,
 				F74B017E189A55F500C29112 /* TDAppDelegate.m in Sources */,
 				F74B017A189A55F500C29112 /* main.m in Sources */,
 			);
@@ -465,6 +497,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7BE5C81189A919A00086E90 /* toDoListData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7BE5C82189A919A00086E90 /* toDoListData.xcdatamodel */,
+			);
+			currentVersion = F7BE5C82189A919A00086E90 /* toDoListData.xcdatamodel */;
+			name = toDoListData.xcdatamodeld;
+			path = ../toDoListData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F74B0162189A55F500C29112 /* Project object */;
 }
